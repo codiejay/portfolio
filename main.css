@@ -1,0 +1,373 @@
+/* Bais styles for the Body */
+body
+{
+    line-height: 2em;
+    font-size: 1.3em
+}
+
+
+/* Styling for the header and header-top */
+.header-top
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:25px 0 50px 0;
+    text-align: center;
+    /* background-color: rgba(136, 52, 233, 0.582); */
+}
+
+.header-top #name
+{
+    font-size: 1.4em
+}
+
+.header-top  ul li a
+{
+  background-color: white;
+  color: rgba(136, 52, 233, 0.582);
+  padding: 5px 24px;
+  border: solid 1px rgba(136, 52, 233, 0.582);
+  border-radius: 25px
+}
+
+
+.header-top  ul li
+{
+    margin-top: 15px;
+}
+header
+{
+    text-align: center;
+    margin-bottom: 100px;
+    /* background-image: linear-gradient(to right, rgba(163, 124, 207, 0.849), rgba(69, 39, 104, 0.966)); */
+    padding-bottom: 40px;
+    
+}
+header .intro
+{
+    letter-spacing: .12em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/* Basic styles for images */
+
+article  img
+{
+   width: 250px;
+   
+}
+
+/* Basic styling for the footer */
+footer
+{
+    background-color: rgba(136, 52, 233, 0.582);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 0px;
+  
+    
+
+}
+/* The what border-bottom */
+.what
+  {
+    border-bottom: 3px solid rgba(136, 52, 233, 0.582);
+  }
+
+/* Styling for the wrapper to align text and set margin and width */
+.wrapper
+{
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    
+}
+
+/* Now the styles for the content of the article */
+
+.wrapper
+h3,
+h2
+{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+.wrapper h3
+{
+    font-size: 2em;
+    font-family: monospace
+}
+.wrapper img
+{
+    border: 2.2px solid rgba(136, 52, 233, 0.582);
+    border-radius: 165px
+    
+}
+.blockquote
+{
+    color: black;
+    font-family: monospace;
+    border-left: 2px solid rgba(0, 0, 0, 0.582);
+}
+
+/* Styling for my social media icons in the contact space */
+.contact img
+{
+   width: 50px;
+   margin: 0px 20px
+}
+
+/* Just a style for a link for users to read more about me */
+.read 
+{
+    background-color: rgba(136, 52, 233, 0.582);
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+    border: 1px solid rgba(136, 52, 233, 0.582);
+   border-radius: 15px ;
+   
+
+}
+
+.read a
+{
+   color: white;
+   font-style: normal;
+   padding: 7px;
+   
+}
+
+.read a:hover
+{
+    color: rgba(136, 52, 233, 0.582);
+    background-image: linear-gradient(to right, rgba(235, 14, 69, 0.89), rgba(197, 30, 189, 0.986));
+    border: 1px solid rgba(136, 52, 233, 0.582);
+    border-radius: 15px
+}
+
+
+
+
+/* 
+    Media Quries Here Now!
+*/
+
+@media(min-width: 769px){
+   /* 
+   Removing All paddings and margins in the .header-top div and also making the li's inline block 
+   Also making it background white and adding the normal padding and margin
+   */
+    #name
+    {
+        float: left;
+        margin: 0;
+        padding: 0
+    }
+     
+    ul
+    {
+        float: right;
+        margin: 0;
+        padding: 0
+    }
+
+    .header-top ul li a
+    {
+        margin: 0;
+        
+    }
+
+    .header-top ul li 
+    {
+        margin: 0;
+        
+    }
+    
+    .header-top
+    {
+        padding: 0;
+        background-color: whitesmoke;
+        padding-bottom: 0;
+        
+    }
+    
+    .header-top ul li
+    {
+        display: inline-block;
+        padding: 5px 7px;
+        margin-left: 50px
+    }
+
+  /* 
+  END
+   Removing All paddings and margins in the .header-top div and also making the li's inline block 
+   Also making it background white and adding the normal padding and margin
+   */
+   .blockquote
+
+   {
+       color: rgba(0, 0, 0, 0.678);
+    
+       width: 70%;
+       margin: 0 auto;
+       font-family: monospace;
+       border-left: 4px solid rgba(136, 52, 233, 0.582);
+       padding-left:100px;
+   }
+
+
+ /* Adding creativity to the headings like H2's AND H3's */
+
+  .what
+  {
+    border-bottom: 1px solid rgba(136, 52, 233, 0.582);
+  }
+
+  .pbox
+  {
+      border-right: 1px solid rgba(136, 52, 233, 0.582);
+  }
+
+ 
+
+
+
+ /* END Adding creativity to the headings like H2's AND H3's */
+
+  .box
+  {
+      width: 33%;
+      float: left;
+      padding-right: 3px
+      
+  }
+
+  .knowbox
+  {
+      vertical-align: top
+  }
+
+/* Making the header-top fixed to the top */
+
+.header-top
+{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    box-shadow:0px 15px 25px 10px rgba(136, 52, 233, 0.425);
+}
+/* Making the body move down becasuse the fixed header corvered the header box */
+body
+{
+    padding-top: 69px
+}
+/* Making my social icons fixed and offset them to the left with a top percentage! */
+.social-icon1
+{
+    position: fixed;
+    right:0;
+    top: 70%
+}
+.social-icon2
+{
+    position: fixed;
+    right:0;
+    top: 70%
+}
+.social-icon2
+{
+    position: fixed;
+    right:0;
+    top: 60%
+}
+
+.social-icon3
+{
+    position: fixed;
+    right:0;
+    top: 50%
+}
+
+.social-icon4
+{
+    position: fixed;
+    right:0;
+    top: 40%
+}
+/* Makeing all the portfolio width turn to a certain percent and make them float altogether. Also adding a clearfix! */
+
+.card
+  {
+     width: 30%;
+    float:left;
+    padding-right: 15px;
+    border-left: 1px solid rgba(136, 52, 233, 0.582);
+  }
+
+
+  @media (max-width: 1020px) and  (min-width: 597px){
+
+.html,
+.css
+{
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.javascript
+{
+    width: 100%;
+}
+
+.one,
+.two
+{
+    width: 48.5%;
+    margin: 0;
+    padding: 4px;
+    float: right
+}
+
+.three
+{
+    width: 100%;
+    border-left: none
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /* Clearfixes NO CODE GOES BELOW! */
+    .clearfix::after
+    {
+       content: ".";
+       visibility: hidden;
+       display: block;
+       clear: both;
+
+    }
+}
+
+
+
