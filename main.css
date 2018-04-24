@@ -245,6 +245,11 @@ h2
       
   }
 
+  .box p
+  {
+      padding: 8px
+  }
+
   .knowbox
   {
       vertical-align: top

@@ -1,0 +1,226 @@
+/* Bais styles for the Body */
+
+
+
+/* Styling for the header and header-top */
+.header-top
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:25px 0 50px 0;
+    text-align: center;
+    /* background-color: rgba(136, 52, 233, 0.582); */
+}
+
+.header-top #name
+{
+    font-size: 1.4em
+}
+
+.header-top  ul li a
+{
+  background-color: white;
+  color: rgba(136, 52, 233, 0.582);
+  padding: 5px 24px;
+  border: solid 1px rgba(136, 52, 233, 0.582);
+  border-radius: 25px;
+  
+}
+.header-top .contact
+{
+    background-color: rgba(136, 52, 233, 0.418);
+    color: white
+}
+
+.header-top  ul li
+{
+    margin-top: 15px;
+}
+header
+{
+    text-align: center;
+    margin-bottom: 100px;
+    /* background-image: linear-gradient(to right, rgba(163, 124, 207, 0.849), rgba(69, 39, 104, 0.966)); */
+    padding-bottom: 40px;
+    
+}
+header .intro
+{
+    letter-spacing: .12em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+/* Above is the code for styling the header for mobile and tabs that for larger screens would of course be in the media querey */
+
+
+body
+{
+    line-height: 1.8em;
+    font-size: 1.3em;
+    
+
+}
+
+.container
+{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid rgba(136, 52, 233, 0.582);
+}
+
+.boxes img
+{
+   
+    width: 60%;
+    border: 1px solid rgba(136, 52, 233, 0.582);
+    border-radius: 150%;
+    margin-bottom: -100px;
+   
+}
+
+.boxes
+{
+    margin-top: 15px;
+    font-family: 'Ruda', sans-serif;
+}
+
+.writeup
+{
+    padding-top: 100px;
+    background-color: rgba(255, 255, 255, 0.856);
+    border:  1px solid rgba(136, 52, 233, 0.582);
+    box-shadow: 0px 0px 40px 0px rgba(136, 52, 233, 0.582);
+    
+    
+}
+
+.box
+{
+   margin-top: 1.2em;
+   
+}
+
+.writeup p
+{
+    padding: 5px
+}
+
+.social img
+{
+     width: 40px;
+     margin-top: 50px;
+     padding: 4px
+}
+
+
+/* Footer */
+footer
+{
+    background-color: rgba(136, 52, 233, 0.582);
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 0px;
+  
+    
+
+}
+
+
+
+/* Media query starts here. LET DO THIS!! */
+
+@media( min-width: 1060px){
+    .container
+    {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .intro
+    {
+        padding-top:  120px
+    }
+    .box
+    {
+        width: 40%;
+        float: left;
+        padding: 35px
+       
+    }
+#name
+{
+    float: left;
+    padding:0  30px
+}
+
+.header-top ul{
+    float: right;
+}
+.header-top ul li
+{
+    float: right;
+    padding:  0 40px;
+    margin-top: 0
+}
+
+.header-top
+{
+    box-shadow: 0px 0px 75px 25px rgba(136, 52, 233, 0.582);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(136, 52, 233, 0.329) , white)
+}
+
+/* The clearfix is used to help rectify the issues of floating a box and so it goes here for me */
+
+.clearfix::after
+{
+    content: "";
+    display: block;
+    visibility: hidden;
+    clear:both;
+    
+}
+
+.social img
+{
+    width: 40px;
+    padding: 30px;
+    position: fixed;
+    padding-top: 30px
+}
+
+.mail
+{
+    top: 70%;
+    right: 0
+}
+.social-icon1
+{
+    top: 60%;
+    right: 0
+}
+
+.social-icon2
+{
+    top: 50%;
+    right: 0
+}
+
+.social-icon3
+{
+    top: 40%;
+    right: 0
+}
+
+.social-icon4
+{
+    top: 30%;
+    right: 0
+}
+}
